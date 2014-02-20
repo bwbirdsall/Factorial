@@ -1,19 +1,42 @@
 var fibonacci = function(number) {
-  if (number < 0 || isNaN(number) || number % 1 !== 0) {
-    return "Cannot compute factorial for negative numbers, non-integers, or non-numbers!";
+  if (isBadInput(number)) {
+    return "Cannot compute Fibonacci sequence for non-positive positions, non-integers, or non-numbers!";
   } else {
-    return 0;
-  }  
+    return sequence(number);
+  }
 };
 
+var isBadInput = function(number) {
+  return (number < 1 || isNaN(number) || number % 1 !== 0);
+};
+
+var sequence = function(index){
+  var fibonacciSequence = [0,1];
+  for (var i = 1; i <= index - 2; i++) {
+    fibonacciSequence.push(fibonacciSequence[i - 1] + fibonacciSequence[i]);
+  }
+  return fibonacciSequence[index - 1];
+};
+
+// var sequence = function(index) {
+//   if (index === 1) {
+//     return 0;
+//   } else if (index === 2) {
+//     return 1;
+//   } else {
+//     return sequence(index - 1) + sequence(index - 2); 
+//   }
+// };
+
 $(document).ready(function() {
-  $('#exclamationMark').hide();
-  $('form#factorial').submit(function(event) {
+  $('#fibonacciNautilus').hide();
+  $('form#fibonacci').submit(function(event) {
     event.preventDefault();
     var numberInput = $('input#inputNumber').val();
-    var result = factorial(numberInput);
+    var result = fibonacci(numberInput);
     $('#result').text(result);
-    $('#exclamationMark').show();
+    $('#fibonacciNautilus').show();
     this.reset();
   });
 });
+

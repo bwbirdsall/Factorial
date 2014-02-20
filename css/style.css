@@ -1,6 +1,6 @@
 body{
 
-  color:darkorchid;
+  color:coral;
 }
 p{
   text-align:center;
@@ -10,14 +10,12 @@ p{
 background-color:#867970;
 color:pink;
 }
-#exclamationMark{
+#fibonacciNautilus{
   text-align:center;
-/*  width: 125px;
-  height: 300px;*/
 }
 
-#exclamationMark img{
-  width: 125px;
+#fibonacciNautilus img{
+  width: 240px;
   height: 300px;
 }
 

@@ -1,11 +1,9 @@
-var factorial = function(number) {
+var fibonacci = function(number) {
   if (number < 0 || isNaN(number) || number % 1 !== 0) {
     return "Cannot compute factorial for negative numbers, non-integers, or non-numbers!";
-  } else if (number < 2) {
-    return 1;
   } else {
-    return number * factorial(number - 1);
-  }
+    return 0;
+  }  
 };
 
 $(document).ready(function() {

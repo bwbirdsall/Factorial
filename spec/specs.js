@@ -12,7 +12,12 @@ describe('punctuationTest',function(){
     Factorial(3).should.equal(6);
   });
 
-    it('should return error message for negative number', function(){
-    Factorial(-3).should.equal("Cannot compute factorial of a negative number!");
+  it('should return error message for negative number', function(){
+    Factorial(-3).should.equal("Cannot compute factorial for negative numbers or non-numbers!");
   });
+
+  it('should return error message for non-number', function(){
+    Factorial("Problem!").should.equal("Cannot compute factorial for negative numbers or non-numbers!");
+  });
+
 });

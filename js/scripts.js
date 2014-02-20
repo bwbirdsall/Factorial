@@ -1,6 +1,6 @@
 var Factorial = function(number) {
-  if (number < 0) {
-    return "Cannot compute factorial of a negative number!";
+  if (number < 0 || isNaN(number)) {
+    return "Cannot compute factorial for negative numbers or non-numbers!";
   } else if (number < 2) {
     return 1;
   } else {

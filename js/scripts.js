@@ -4,7 +4,7 @@ var factorial = function(number) {
   } else if (number < 2) {
     return 1;
   } else {
-    return number * factorial(number-1);
+    return number * factorial(number - 1);
   }
 };
 
@@ -14,7 +14,7 @@ $(document).ready(function() {
     event.preventDefault();
     var numberInput = $('input#inputNumber').val();
     var result = factorial(numberInput);
-    $('#result').append('<p>'+ result +'</p>');
+    $('#result').text(result);
     $('#exclamationMark').show();
     this.reset();
   });

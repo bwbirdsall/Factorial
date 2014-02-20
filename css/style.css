@@ -1,6 +1,6 @@
 body{
 
-  color:#D55FAE;
+  color:darkorchid;
 }
 p{
   text-align:center;
@@ -10,6 +10,13 @@ p{
 background-color:#867970;
 color:pink;
 }
-#pigPic{
+#exclamationMark{
   text-align:center;
+/*  width: 125px;
+  height: 300px;*/
+}
+
+#exclamationMark img{
+  width: 125px;
+  height: 300px;
 }

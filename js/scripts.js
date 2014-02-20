@@ -11,14 +11,14 @@ var Factorial = function(number) {
   }
 };
 
-// $(document).ready(function() {
-//   $('#pigPic').hide();
-//   $('form#pLatin').submit(function(event) {
-//     event.preventDefault();
-//     var wordInput = $('input#pLatinString').val();
-//     var result = pigLatin(wordInput);
-//     $('#result').append('<p>'+ result +'</p>');
-//     $('#pigPic').show();
-//     this.reset();
-//   });
-// });
+$(document).ready(function() {
+  $('#exclamationMark').hide();
+  $('form#factorial').submit(function(event) {
+    event.preventDefault();
+    var numberInput = $('input#inputNumber').val();
+    var result = Factorial(numberInput);
+    $('#result').append('<p>'+ result +'</p>');
+    $('#exclamationMark').show();
+    this.reset();
+  });
+});

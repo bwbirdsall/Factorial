@@ -1,4 +1,4 @@
-describe('punctuationTest',function(){
+describe('Factorial',function(){
   it('should return 1 for 1', function(){
     Factorial(1).should.equal(1);
   });

@@ -1,34 +1,12 @@
 var Factorial = function(number) {
-//   if (number < 0 || isNaN(number) || number % 1 !== 0) {
-//     return "Cannot compute factorial for negative numbers, non-integers, or non-numbers!";
-//   } else if (number < 2) {
-//     return 1;
-//   } else {
-//     for(var i = number; i > 1; i--) {
-//       number *= i-1;
-//     }
-//     return number;
-//   }
-// };
-
   if (number < 0 || isNaN(number) || number % 1 !== 0) {
     return "Cannot compute factorial for negative numbers, non-integers, or non-numbers!";
   } else if (number < 2) {
     return 1;
   } else {
-    return factorialize(number,number);
+    return number * Factorial(number-1);
   }
 };
-
-var factorialize = function(number,value) {
-  if (number>1) {
-    number=number-1;
-    value *= number;
-    factorialize(number,value);
-  }
-  return value;  
-};
-    
 
 $(document).ready(function() {
   $('#exclamationMark').hide();

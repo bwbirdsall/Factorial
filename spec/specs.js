@@ -11,4 +11,8 @@ describe('punctuationTest',function(){
   it('should return 6 for 3', function(){
     Factorial(3).should.equal(6);
   });
+
+    it('should return error message for negative number', function(){
+    Factorial(-3).should.equal("Cannot compute factorial of a negative number!");
+  });
 });

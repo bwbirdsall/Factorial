@@ -1,5 +1,7 @@
 var Factorial = function(number) {
-  if (number < 2) {
+  if (number < 0) {
+    return "Cannot compute factorial of a negative number!";
+  } else if (number < 2) {
     return 1;
   } else {
     for(var i = number; i > 1; i--) {

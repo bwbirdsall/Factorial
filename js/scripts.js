@@ -1,15 +1,9 @@
 var cryptosquare = function(string) {
   string = string.toLowerCase();
-
   string = removeSpacesAndPunc(string);
-
   var squareNoColumns = boxSize(string);
-
   string = encode(string, squareNoColumns);
-
-  string = insertSpaces(string);
-
-  return string;
+  return insertSpaces(string);
 };
 
 var removeSpacesAndPunc = function(string) {

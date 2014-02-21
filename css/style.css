@@ -1,6 +1,7 @@
 body{
 
-  color:coral;
+  color:darkslategrey;
+  background-color: gainsboro; 
 }
 p{
   text-align:center;
@@ -8,15 +9,15 @@ p{
  }
 .btn{
 background-color:#867970;
-color:pink;
+color:darkslategrey;
 }
-#fibonacciNautilus{
+#cryptosquareImage{
   text-align:center;
 }
 
-#fibonacciNautilus img{
-  width: 240px;
-  height: 300px;
+#cryptosquareImage img{
+  width: 461px;
+  height: 306px;
 }
 
 #result {
